@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyPostsServiceService } from '../services/my-posts-service/my-posts-service.service';
 
 @Component({
   selector: 'app-my-first-component',
@@ -9,6 +10,10 @@ import { Component } from '@angular/core';
 })
 export class MyFirstComponentComponent {
 
-  constructor(){ }
+  constructor(private myPostSvc: MyPostsServiceService) {
+    this.myPostSvc.getMyPosts().subscribe((data: any) => {
+      console.log(data);
+    });
+  }
 
 }

@@ -5,7 +5,10 @@ import { MyFirstComponentComponent } from './my-first-component/my-first-compone
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MyFirstComponentComponent],
+  imports: [
+    RouterOutlet, 
+    MyFirstComponentComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
