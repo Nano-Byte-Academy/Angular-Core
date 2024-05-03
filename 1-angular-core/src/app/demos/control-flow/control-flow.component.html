@@ -1,0 +1,53 @@
+<!-- @if -->
+<!-- <div>
+    @if (myImageUrl) {
+        <img alt="code" src="{{ myImageUrl }}" width="100" height="100">
+    } @else {
+        <h2>No image found!</h2>
+    }
+</div> -->
+<!-- <div>
+    @if (myImageUrl) {
+        <img alt="code" src="{{ myImageUrl }}" width="100" height="100">
+    } @else if (myImageUrl1) {
+        <img alt="code" src="{{ myImageUrl1 }}" width="100" height="100">
+    } @else if (myImageUrl2) {
+        <img alt="code" src="{{ myImageUrl2 }}" width="100" height="100">
+    } @else {
+        <h2>No image found!</h2>
+    }
+</div> -->
+<!-- <div>
+    @if (coursesList; as courseList) {
+        <span>Courses Length: {{ courseList.length }} </span>
+    }
+</div> -->
+
+<!-- @for -->
+<!-- <div>My Courses List:</div>
+@for (course of coursesList; track myTrackingFunction; let index = $index;
+            let count = $count;
+            let isFirst = $first; let isLast = $last;
+            let isEven = $even; let isOdd = $odd;) {
+    <div [class.isEvenStyle]="isEven">
+        <span>{{ index }} of {{ count }}. </span>
+        <span>{{ course.name }}</span>
+    </div>
+} @empty {
+    <h2>No courses found!</h2>
+} -->
+
+
+<!-- @switch -->
+@switch (coursesList[0].courseTag) {
+    @case ("Frontend") {
+        <div>FRONTEND</div>
+    }
+    @case ("Backend") {
+        <div>BACKEND</div>
+    }
+    @default {
+        <div>CLOUD</div>
+    }
+}
+
