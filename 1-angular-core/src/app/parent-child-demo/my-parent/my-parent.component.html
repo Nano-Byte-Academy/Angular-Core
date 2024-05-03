@@ -1,0 +1,7 @@
+<p>my-parent works!</p>
+
+<br>
+
+<app-my-child [my_data_from_parent]="my_parent_child_data"
+    (newDataEvent)="updateValueFromEvent($event)"></app-my-child>
+
