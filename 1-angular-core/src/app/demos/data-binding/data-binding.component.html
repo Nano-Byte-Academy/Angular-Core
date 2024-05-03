@@ -1,0 +1,55 @@
+
+<!-- String Interpolation -->
+<!-- <div>
+    <div class="myDivStyle">Component properties: {{ myFirstInterpolationVar }}</div>
+    <div class="myDivStyle">myImage: <img alt="code" src="{{ myImageUrl }}" width="100" height="100"></div>
+    <div class="myDivStyle">Method calls: {{ getMyValue() }}</div>
+    <div class="myDivStyle">Arithmetic operations: {{ 5 + 6 }}</div>
+</div> -->
+
+<!-- Property Binding -->
+<!-- <div>
+    <div class="myDivStyle">Setting Element Property: <span [textContent]="myFirstInterpolationVar"></span></div>
+                                            <button type="button" [disabled]="isActive">Disabled Button</button>
+    <div class="myDivStyle">Binding to DOM attributes: <img alt="code" [src]="myImageUrl" width="100" height="100"></div>
+    <div class="myDivStyle">Binding to CSS classes: <span [class.active]="isActive">Hello World 2!</span></div>
+</div> -->
+
+<!-- Event Binding -->
+<!-- <div>
+    <div class="myDivStyle">MouseEvent: <button type="button" (click)="handleClick($event)">Test Button 1</button></div>
+    <div class="myDivStyle">KeyboardEvent: <input type="text" (keyup)="onKeyUp($event)"></div>
+    <div class="myDivStyle">onMouseOver: <div (mouseover)="onMouseOver($event)">Hover over me!</div></div>
+    <div class="myDivStyle">onEnterPress: <input type="text" (keydown.enter)="onEnterPress($event)"></div>
+</div> -->
+
+
+<!-- Two-way data Binding -->
+<div>
+    <div class="myDivStyle">
+        Input Elements: <input type="text" [(ngModel)]="text2way"> <br>CurrentValue={{text2way}}</div>
+    <div class="myDivStyle">
+        Input Elements: <textarea [(ngModel)]="textArea2way"></textarea> <br>CurrentValue={{textArea2way}}</div>
+    <div class="myDivStyle">
+        Select Elements: 
+        <select [(ngModel)]="selectedCountry">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <br>CurrentValue={{selectedCountry}}
+    </div>
+    <div class="myDivStyle">
+        Radio Buttons:
+        <input type="radio" [(ngModel)]="selectedColor" value="red"> Red
+        <input type="radio" [(ngModel)]="selectedColor" value="green"> Green
+        <br>CurrentValue={{selectedColor}}
+    </div>
+    <div class="myDivStyle">
+        Checkboxes:
+        <input type="checkbox" [(ngModel)]="isChecked">
+        <br>CurrentValue={{isChecked}}
+    </div>
+   
+</div>
+
