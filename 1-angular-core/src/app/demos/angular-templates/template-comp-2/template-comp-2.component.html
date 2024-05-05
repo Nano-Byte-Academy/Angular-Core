@@ -1,0 +1,30 @@
+<p>Component 2</p>
+
+<!-- <div>
+    <div *ngIf="isSectionEnabled; else templateContent">
+        Section is enabled.
+    </div>
+    <ng-template #templateContent>
+        <div>Section is disabled. {{ isSectionEnabled }}</div>
+    </ng-template>
+</div> -->
+
+<!-- <div>
+    <div [ngTemplateOutlet]="myBodyTemplate" [ngTemplateOutletContext]="{'myKey1':'placeholder value 1'}">
+    </div>
+</div> -->
+
+<!-- <div>
+    <div *ngTemplateOutlet="myBodyTemplate; context:{'myObj':myContextObject}">
+    </div>
+</div> -->
+
+<!-- <div>
+    <div [ngTemplateOutlet]="myBodyTemplate" [ngTemplateOutletContext]="{'myObj':myContextObject}">
+    </div>
+</div> -->
+
+<div>
+    <div [ngTemplateOutlet]="myBodyTemplate" [ngTemplateOutletContext]="{ $implicit:myContextObject }">
+    </div>
+</div>

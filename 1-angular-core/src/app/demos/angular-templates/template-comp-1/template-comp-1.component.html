@@ -1,0 +1,19 @@
+<div class="parentCompDivStyle">
+    <p>Component 1</p>
+
+    <div class="childCompDivStyle">
+        <div>
+            <ng-template #myComp1Template let-myObjVal>
+                <h4>Passing template from Parent</h4>
+                <div>Parent body text</div>
+                <div>myKey1: {{ myObjVal.myKey1 }}</div>
+                <div>myKey2: {{ myObjVal.myKey2 }}</div>
+            </ng-template>
+            <app-template-comp-2 [myBodyTemplate]="myComp1Template"></app-template-comp-2>
+        </div>
+
+    </div>
+
+    <!-- <div [ngTemplateOutlet]="myComp1Template">
+    </div> -->
+</div>
