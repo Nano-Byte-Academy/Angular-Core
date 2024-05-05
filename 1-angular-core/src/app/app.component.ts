@@ -4,6 +4,7 @@ import { MyFirstComponentComponent } from './my-first-component/my-first-compone
 import { MyParentComponent } from './parent-child-demo/my-parent/my-parent.component';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
 import { ControlFlowComponent } from './demos/control-flow/control-flow.component';
+import { MyParentComponent as MyParent1 } from './demos/view-child-decorator/my-parent/my-parent.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { ControlFlowComponent } from './demos/control-flow/control-flow.componen
     MyFirstComponentComponent,
     MyParentComponent,
     DataBindingComponent,
-    ControlFlowComponent
+    ControlFlowComponent,
+    MyParent1
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

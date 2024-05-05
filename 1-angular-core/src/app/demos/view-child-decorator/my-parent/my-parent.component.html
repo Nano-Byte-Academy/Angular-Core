@@ -1,0 +1,22 @@
+<div class="parentDivStyle">
+    <h2>Parent</h2>
+    <div>Current Parent Title: {{ parentTitle }}</div>
+    <button type="button" (click)="changeChildTitle()">
+        Change Child title from Parent</button>
+    <br><br><br>
+
+
+    <div class="childDivStyle">
+        <h2 #childHeading>Child</h2>
+
+        <app-my-view-child [childInputTitle]="'child Component 1'" #childComp1>
+        </app-my-view-child>
+
+        <app-my-view-child [childInputTitle]="'child Component 2'" #childComp2>
+        </app-my-view-child>
+
+        <app-my-view-child [childInputTitle]="'child Component 3'" #childComp3>
+        </app-my-view-child>
+    </div>
+
+</div>
