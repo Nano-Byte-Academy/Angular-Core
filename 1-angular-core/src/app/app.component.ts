@@ -7,6 +7,7 @@ import { ControlFlowComponent } from './demos/control-flow/control-flow.componen
 import { MyParentComponent as MyParent1 } from './demos/view-child-decorator/my-parent/my-parent.component';
 import { MyContentProj1Component } from './demos/content-projection/my-content-proj-1/my-content-proj-1.component';
 import { TemplateComp1Component } from './demos/angular-templates/template-comp-1/template-comp-1.component';
+import { ClassStyleBindingComponent } from './demos/class-style-binding/class-style-binding.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { TemplateComp1Component } from './demos/angular-templates/template-comp-
     ControlFlowComponent,
     MyParent1,
     MyContentProj1Component,
-    TemplateComp1Component
+    TemplateComp1Component,
+    ClassStyleBindingComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
