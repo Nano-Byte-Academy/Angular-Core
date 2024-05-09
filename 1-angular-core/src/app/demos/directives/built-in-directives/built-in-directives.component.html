@@ -1,0 +1,48 @@
+<!-- <div [ngClass]="myBooleanFlag ? 'myCustomStyle1':''">
+    my custom style div 1.
+</div> -->
+
+<!-- <div [ngClass]="myClassesList">
+    my custom style div 2.
+</div> -->
+
+<!-- <div [ngStyle]="myStylesList">
+    my custom style div 3.
+</div> -->
+
+<!-- <div>
+    <form>
+        <label for="userNameid">Name:</label>
+        <input type="text" id="userNameid" [(ngModel)]="myModelName" name="userName" required>
+        <p>Your name is: {{ myModelName }}</p>
+    </form>
+</div> -->
+
+<!-- <div>
+    <div *ngIf="myBooleanFlag">Hello World 1</div>
+</div> -->
+
+<!-- <div>
+    <div *ngFor="let book of myBooksList">{{ book['bookName'] }}</div>
+</div> -->
+
+<!-- <div>
+    <div>
+        My conditonal div with:
+        <ng-container *ngIf="myBooleanFlag">
+            ng-container text
+        </ng-container>
+    </div>
+</div> -->
+
+<div>
+    <div *ngFor="let book of myBooksList">
+
+        <div [ngSwitch]="book['category']">
+            <span *ngSwitchCase="'Fiction'">This is a Fiction book.</span>
+            <span *ngSwitchCase="'AI'">This is an AI book.</span>
+            <span *ngSwitchDefault>This is an 'Unknown' category book.</span>
+        </div>
+
+    </div>
+</div>

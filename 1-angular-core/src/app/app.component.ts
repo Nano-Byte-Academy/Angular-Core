@@ -8,6 +8,7 @@ import { MyParentComponent as MyParent1 } from './demos/view-child-decorator/my-
 import { MyContentProj1Component } from './demos/content-projection/my-content-proj-1/my-content-proj-1.component';
 import { TemplateComp1Component } from './demos/angular-templates/template-comp-1/template-comp-1.component';
 import { ClassStyleBindingComponent } from './demos/class-style-binding/class-style-binding.component';
+import { BuiltInDirectivesComponent } from './demos/directives/built-in-directives/built-in-directives.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { ClassStyleBindingComponent } from './demos/class-style-binding/class-st
     MyParent1,
     MyContentProj1Component,
     TemplateComp1Component,
-    ClassStyleBindingComponent
+    ClassStyleBindingComponent,
+    BuiltInDirectivesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
