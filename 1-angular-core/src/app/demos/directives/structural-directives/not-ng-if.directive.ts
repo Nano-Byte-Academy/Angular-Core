@@ -13,7 +13,7 @@ export class NotNgIfDirective {
     private viewContainer: ViewContainerRef
   ) { }
 
-  @Input() set appNotNgIf1(condition: boolean) {
+  @Input() set appNotNgIf(condition: boolean) {
     if (!condition && !this.hasView) {
       this.viewContainer.createEmbeddedView(this.templateRef);
       this.hasView = true;
