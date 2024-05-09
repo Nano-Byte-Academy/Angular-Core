@@ -1,0 +1,23 @@
+<!-- *ngIf -> shorthand -->
+<div *ngIf="myData" class="myClass" id="myId">{{myData.name}}</div>
+
+<!-- *ngIf -> longhand -->
+<ng-template [ngIf]="myData">
+    <div class="myClass" id="myId">{{myData.name}}</div>
+</ng-template>
+
+<!-- *ngFor -> shorthand -->
+<div *ngFor="let myData of myDataList; let i=index; let odd=odd; trackBy: myData.id" 
+        [class.odd]="odd">
+    {{i}}. {{myData.name}}
+</div>
+
+<!-- *ngFor -> longhand -->
+<ng-template ngFor let-myData [ngForOf]="myDataList" let-i="index" let-odd="odd" 
+        [ngForTrackBy]="myData.id">
+    <div [class.odd]="odd">
+        {{i}}. {{myData.name}}
+    </div>
+</ng-template>
+
+
