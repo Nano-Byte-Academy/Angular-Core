@@ -9,6 +9,7 @@ import { MyContentProj1Component } from './demos/content-projection/my-content-p
 import { TemplateComp1Component } from './demos/angular-templates/template-comp-1/template-comp-1.component';
 import { ClassStyleBindingComponent } from './demos/class-style-binding/class-style-binding.component';
 import { BuiltInDirectivesComponent } from './demos/directives/built-in-directives/built-in-directives.component';
+import { MyCustomColorComponent } from './demos/directives/custom-directives/my-custom-color/my-custom-color.component';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,8 @@ import { BuiltInDirectivesComponent } from './demos/directives/built-in-directiv
     MyContentProj1Component,
     TemplateComp1Component,
     ClassStyleBindingComponent,
-    BuiltInDirectivesComponent
+    BuiltInDirectivesComponent,
+    MyCustomColorComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
