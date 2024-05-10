@@ -11,6 +11,7 @@ import { ClassStyleBindingComponent } from './demos/class-style-binding/class-st
 import { BuiltInDirectivesComponent } from './demos/directives/built-in-directives/built-in-directives.component';
 import { MyCustomColorComponent } from './demos/directives/custom-directives/my-custom-color/my-custom-color.component';
 import { MyNotngifCompComponent } from './demos/directives/structural-directives/my-notngif-comp/my-notngif-comp.component';
+import { MyHostDirExComponent } from './demos/directives/host-directives/my-host-dir-ex/my-host-dir-ex.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,7 @@ import { MyNotngifCompComponent } from './demos/directives/structural-directives
     MyParentComponent, DataBindingComponent, ControlFlowComponent,
     MyParent1, MyContentProj1Component, TemplateComp1Component,
     ClassStyleBindingComponent, BuiltInDirectivesComponent,
-    MyCustomColorComponent, MyNotngifCompComponent
+    MyCustomColorComponent, MyNotngifCompComponent, MyHostDirExComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
