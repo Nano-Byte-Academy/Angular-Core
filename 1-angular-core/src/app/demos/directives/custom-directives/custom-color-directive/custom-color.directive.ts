@@ -1,7 +1,11 @@
-import { Directive, ElementRef, EventEmitter, HostBinding, HostListener, Input, Output } from '@angular/core';
+import {
+  Directive, ElementRef, EventEmitter, HostBinding, HostListener,
+  Input, Output
+} from '@angular/core';
 
 @Directive({
   selector: '[appCustomColor]',
+  exportAs: 'myCustomColorDirective',
   standalone: true
 })
 export class CustomColorDirective {
@@ -50,6 +54,9 @@ export class CustomColorDirective {
     this.toggleColor.emit("my custom emitted Red color message");
   }
 
+  changeMyColor() {
+    this.el.nativeElement.style.color = 'yellow';
+  }
 
 
 }
