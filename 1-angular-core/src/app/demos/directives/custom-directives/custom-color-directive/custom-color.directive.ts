@@ -43,6 +43,11 @@ export class CustomColorDirective {
     this.el.nativeElement.style.textDecoration = 'underline';
   }
 
+  @HostListener('mouseover', ['$event']) 
+  onMouseOver($event: any) {
+    console.log("$event = ",$event);
+  }
+
 
 
 }
