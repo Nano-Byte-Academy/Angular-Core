@@ -4,8 +4,14 @@
     </p>
 </div> -->
 
-<div ngNonBindable>
+<!-- <div ngNonBindable>
     <div appCustomColor>
         Deactivating Angular processing: {{ 2 + 3}}
     </div>
+</div> -->
+
+<div>
+    <p appCustomColor [fontSize]="30">
+        My directive changed this text decoration 2!
+    </p>
 </div>
