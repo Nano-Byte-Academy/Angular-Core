@@ -4,10 +4,14 @@ import { CustomColorDirective } from '../custom-color-directive/custom-color.dir
 @Component({
   selector: 'app-my-custom-color',
   standalone: true,
-  imports: [ CustomColorDirective ],
+  imports: [CustomColorDirective],
   templateUrl: './my-custom-color.component.html',
   styleUrl: './my-custom-color.component.scss'
 })
 export class MyCustomColorComponent {
+
+  handleToggColorEvent($event: any) {
+    console.log("my emitted message in component.ts = ", $event);
+  }
 
 }

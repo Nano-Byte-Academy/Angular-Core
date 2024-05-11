@@ -10,8 +10,14 @@
     </div>
 </div> -->
 
-<div>
+<!-- <div>
     <p appCustomColor [fontSize]="30">
+        My directive changed this text decoration 2!
+    </p>
+</div> -->
+
+<div>
+    <p appCustomColor (toggleColor)="handleToggColorEvent($event)">
         My directive changed this text decoration 2!
     </p>
 </div>

@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostBinding, HostListener, Input } from '@angular/core';
+import { Directive, ElementRef, EventEmitter, HostBinding, HostListener, Input, Output } from '@angular/core';
 
 @Directive({
   selector: '[appCustomColor]',
@@ -23,6 +23,7 @@ export class CustomColorDirective {
   // property binding
   @HostBinding('id') get id() { return 'myCustomId'; }
 
+  @Output() toggleColor = new EventEmitter();
 
   constructor(private el: ElementRef) {
     this.el.nativeElement.style.color = 'red';
@@ -43,9 +44,10 @@ export class CustomColorDirective {
     this.el.nativeElement.style.textDecoration = 'underline';
   }
 
-  @HostListener('mouseover', ['$event']) 
+  @HostListener('mouseover', ['$event'])
   onMouseOver($event: any) {
-    console.log("$event = ",$event);
+    //console.log("$event = ",$event);
+    this.toggleColor.emit("my custom emitted Red color message");
   }
 
 
